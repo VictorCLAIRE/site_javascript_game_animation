@@ -1,0 +1,88 @@
+html{
+    padding: 0;
+    margin: 0;
+}
+ul {
+    list-style-type: none;
+    }
+.todo{
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease;
+    color: black;
+}
+.todo li{
+    flex: 1;
+}
+
+.trash-btn,
+.completed-btn{
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1rem;
+    margin: 4px;
+}
+
+.completed{
+    text-decoration: line-through;
+    opacity: 0.5;
+
+}
+
+/**********************************CASSE-BRIQUE****************/
+
+canvas { 
+    background: rgba(0, 0, 0, 0.637);
+    display: block; 
+    margin: 0 auto; 
+    box-shadow: 0px 0px 30px  white ;
+    
+}
+
+/**************************QUIZZ******************/
+body .container .choices {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3rem auto 3rem;
+    width: 500px;
+  }
+  body .container .choices button {
+    flex: 1 0 45%;
+    width: 200px;
+    height: 80px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    margin: 0.4rem;
+    outline: none;
+    background: #22A2EF;
+    user-select: none;
+    font-weight: 600;
+    color: white;
+  }
+  body .container .choices button:hover {
+    background: #2241ef;
+    transition: 0.5s;
+  }
+  body .container .choices button:active {
+    transform: scale(0.9);
+    transition: transform 0.1s;
+  }
+  body .container .choices button p {
+    font-size: 1.7rem;
+  }
+  body #progress {
+    font-size: 1.3rem;
+    color: #E93AB8;
+  }
+  .quizz{
+    box-shadow: 0px 0px 40px  #E93AB8 ;
+  }
+  .h2quizz{
+      padding-top: 10px;
+      color: #22A2EF !important;
+  }
